@@ -138,6 +138,7 @@ main {
 	}
 	
 	.footer-copyright {
+		position: static;
 		padding: 16px;		
 		font-size: 12px;
 	}
