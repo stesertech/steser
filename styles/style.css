@@ -1,0 +1,144 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000000;
+	cursor: url('../imgs/mouse.png');
+}
+
+.header-container {
+}
+
+.full-logo {
+	margin: 32px 0 0 48px;
+	height: 120px;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container {
+	text-align:center;
+	margin: 48px 264px 48px 264px;
+}
+
+
+.main-text-boss {
+	text-align: center;
+	margin: 0 0 64px 0;
+	font-size: 48px;
+	font-weight: 800;
+	
+    background: linear-gradient(
+        to right,
+        #ffffff 20%,
+        #58229C 30%,
+        #DE3467 70%,
+        #ffffff 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.main-text-head {
+	margin: 0 0 8px 0;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+.main-text-body {
+	margin: 0 0 64px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+.linkIcon {
+	width: 80px;
+	height: 80px; 
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-copyright {
+	text-align: center;
+	width: 100%;
+	padding: 32px;
+	position: absolute;
+    bottom: 0;
+	
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	main {
+		all: unset;
+	}
+	
+	.full-logo {
+		margin: 16px 0 0 16px;
+		height: 80px;
+	}
+	
+	.main-container {
+		text-align:center;
+		margin: 16px;
+	}
+	
+	.main-text-boss {
+		text-align: center;
+		margin: 64px 0 32px 0;
+		font-size: 24px;
+	}
+	
+	.main-text-head {
+		margin: 0 0 8px 0;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main-text-body {
+		margin: 0 0 56px 0;
+		text-align: center;
+		font-size: 14px;
+	}
+	
+	.linkIcon {
+		width: 60px;
+		height: 60px; 
+	}
+	
+	.footer-copyright {
+		padding: 16px;		
+		font-size: 12px;
+	}
+}
